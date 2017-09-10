@@ -3,7 +3,7 @@ MAINTAINER vladislav.kurmaz@gmail.com
 
 ENV TERM xterm
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install dialog apt-utils apt-transport-https mc default-jre default-jdk curl wget rsync maven
+RUN apt-get -y install dialog apt-utils apt-transport-https mc default-jre default-jdk curl wget rsync maven git bzip2 tar
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && apt-get install -y nodejs
 
 

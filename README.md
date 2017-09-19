@@ -14,5 +14,4 @@
 * start sonarqube running <project-home>/cidd/sonarqube/up.sh
 
 ### nexus
-* ...
-* ...
+

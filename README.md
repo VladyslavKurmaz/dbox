@@ -21,3 +21,5 @@
 * start sonarqube running <project-home>sonarqube-up.sh
 
 
+### nexus
+* ...

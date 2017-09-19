@@ -9,8 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && apt-get install -y
 
 RUN wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
 RUN echo 'deb https://pkg.jenkins.io/debian-stable binary/' | tee -a /etc/apt/sources.list
-RUN apt-get -y update
-RUN apt-get install -y jenkins
+RUN apt-get -y update && apt-get install -y jenkins && service jenkins start
 
 COPY ./docker-entrypoint.sh /
-CMD ["/docker-entrypoint.sh"]
+CMD ["/bin/bash", "-c" "/docker-entrypoint.sh"]
